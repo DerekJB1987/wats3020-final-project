@@ -9,21 +9,20 @@ It is STRONGLY recommended to pull back on the number of features in your page a
 
 What is crucial about this assignment is that you demonstrate your mastery of basic JavaScript. Focus on the details, get everything right, and minimize the extra bells and whistles. This approach will give you the best experience and the most valuable portfolio piece.
 
-Basic Requirements
+#Basic Requirements<br>
 In order to fulfill the requirements of this assignment you must:
 
-Write standards-compliant JS that functions.
-Make use of both Array and Object data structures.
-Make use of at least TWO conditional statements that play a significant role in your code.
-Make use of either Functions or Classes to organize your code.
-Make use of at least TWO Event listeners and handlers to respond to user interaction.
-Perform at least TWO string modifications/replacements on the page.
-Leverage proper DOM traversal and understanding of hierarchy to facilitate manipulating the page to enhance the user's experience.
- 
+Write standards-compliant JS that functions.<br>
+Make use of both Array and Object data structures.<br>
+Make use of at least TWO conditional statements that play a significant role in your code.<br>
+Make use of either Functions or Classes to organize your code.<br>
+Make use of at least TWO Event listeners and handlers to respond to user interaction.<br>
+Perform at least TWO string modifications/replacements on the page.<br>
+Leverage proper DOM traversal and understanding of hierarchy to facilitate manipulating the page to enhance the user's experience.<br>
 
-Stretch Goals
+#Stretch Goals
 If the Basic Requirements do not provide enough challenge, try these goals:
 
-Write a Class-based feature that you can re-use throughout the page.
-Dive into the large world of JS modules and write code that leverages a third-party JS library in an interesting way.
+Write a Class-based feature that you can re-use throughout the page.<br>
+Dive into the large world of JS modules and write code that leverages a third-party JS library in an interesting way.<br>
 Create a game.
