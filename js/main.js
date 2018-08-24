@@ -1,4 +1,5 @@
 //fetching HTML Elements in variables by ID
+/*eslint-disable no-empty-label, no-redeclare*/
 var x = document.getElementById("form_sample");
  
 var createform = document.createElement('form'); // Create New Element form
@@ -27,3 +28,17 @@ var inputelement = document.createElement('input'); // Create input field for na
  
 var linebreak = document.createElement('br');
  createform.appendChild(linebreak);
+ 
+var emaillabel = document.createElement('label'); //Create Label for email field
+ emaillabel.innerHTML = "Your Email : ";
+ createform.appendChild(emaillabel);
+ 
+var emailelement = document.createElement('input'); // Create input field for email
+ emailelement.setAttribute("type", "text");
+ emailelement.setAttribute("name", "demail");
+ createform.appendChild(emailelement);
+ 
+var emailbreak = document.createElement('br');
+ createform.appendChild(emailbreak);
+ 
+ 
