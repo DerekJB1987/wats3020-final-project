@@ -15,14 +15,29 @@
     <body>
         <div id="main">
             <h2>Contact Form</h2>
-            <div id="form_sample">
-                <p>Name</p>
-                <p>Mailing Address</p>
-                <p>Email Address</p>
-                <p>Phone Number</p>
-                <p>Username</p>
-                <p>Password</p>
-                <p>Submit</p>
+            <form action="Contact Form" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="full_name">
+                </div>
+                <div>
+                    <label for="mail">Mailing Address:</label>
+                    <input type="text" id="mail" name="mail_address">
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div>Phone Number</div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username">
+                    <label for="username"><abbr title="required">*</abbr></label>
+                </div>
+                <div>Password</div>
+            <div class ="button">
+                <button type="submit">Submit</button>
+            </div>
         </div>
     </body>
 </html>
