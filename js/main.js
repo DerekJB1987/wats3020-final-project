@@ -1,39 +1,30 @@
 //fetching HTML Elements in variables by ID
-/*eslint-disable no-empty-label, no-redeclare*/
 
+console.log('It works');
 
+/*Prompt visitor to enter information*/
 
+let contact = prompt('Enter your contact information below (name, email, phone & comments');
 
+/*Prompt visitor to enter information*/
 
-function form()                                   
+function validateForm()                                   
 {
-    var name = document.getElementbyID("Name");
-    var mail = document.getElementById("Mail");
-    var email = document.getElementById("Email"); 
-    var phone = document.getElementById("Phone");
-    
-    if (name.value === "")                                 
-        {
-            window.alert("Please enter your name.");
-            name.focus();
+    var name = document.forms["contact"]["Name"].value;
+        if (name == "") {
+            alert("Name must be filled out");
+            return false;            
+        }
+        
+    var email = document.forms["contact"]["email"].value;
+        if (email == "") {
+            alert("An email must be provided");
             return false;
         }
-    if (address.value === "")                              
-    {
-        window.alert("Please enter your address.");
-        name.focus();
-        return false;
-    }
-      
-    if (email.value === "")                                  
-    {
-        window.alert("Please enter a valid e-mail address.");
-        email.focus();
-        return false;
-    }
-    
-    if (phone.value === "")                          
-    {
-        window.alert("Please enter your telephone number.");
-        phone.focus();
-        return false;
+        
+    var phone = document.forms["contact"]["phone"].value;
+        if (phone == "") {
+            alert("A Phone number must be provided");
+            return false
+        }      
+}
