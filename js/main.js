@@ -3,41 +3,41 @@
 
 function form()                                   
 {
-    var name = document.forms["ContactForm"]["Name"];    
-    var address =  document.forms["ContactForm"]["Mail"]; 
-    var email = document.forms["ContactForm"]["EMail"];   
-    var phone = document.forms["ContactForm"]["Phone"]; 
-    var username - document.forms["ContactForm"]["Username"];
-    var password = document.forms["ContactForm"]["Password"]; 
+    var name = document.forms["login"]["Name"];    
+    var address =  document.forms["login"]["Mail"]; 
+    var email = document.forms["login"]["EMail"];   
+    var phone = document.forms["login"]["Phone"]; 
+    var username = document.forms["login"]["Username"];
+    var password = document.forms["login"]["Password"]; 
     
-    if (name.value == "")                                 
+    if (name.value === "")                                 
         {
             window.alert("Please enter your name.");
             name.focus();
             return false;
         }
-    if (address.value == "")                              
+    if (address.value === "")                              
     {
         window.alert("Please enter your address.");
         name.focus();
         return false;
     }
       
-    if (email.value == "")                                  
+    if (email.value === "")                                  
     {
         window.alert("Please enter a valid e-mail address.");
         email.focus();
         return false;
     }
     
-    if (phone.value == "")                          
+    if (phone.value === "")                          
     {
         window.alert("Please enter your telephone number.");
         phone.focus();
         return false;
     }
     
-    if (username.value == "")
+    if (username.value === "")
     {
         
         window.alert('Please enter your username.');
@@ -45,7 +45,7 @@ function form()
         return false;
     }
     
-    if (password.value == "")                       
+    if (password.value === "")                       
     {
         window.alert("Please enter your password");
         password.focus();
