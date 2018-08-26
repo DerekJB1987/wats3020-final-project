@@ -1,14 +1,16 @@
 //fetching HTML Elements in variables by ID
 /*eslint-disable no-empty-label, no-redeclare*/
 
+
+
+
+
 function form()                                   
 {
-    var name = document.forms["login"]["Name"];    
-    var address =  document.forms["login"]["Mail"]; 
-    var email = document.forms["login"]["EMail"];   
-    var phone = document.forms["login"]["Phone"]; 
-    var username = document.forms["login"]["Username"];
-    var password = document.forms["login"]["Password"]; 
+    var name = document.getElementbyID("Name");
+    var mail = document.getElementById("Mail");
+    var email = document.getElementById("Email"); 
+    var phone = document.getElementById("Phone");
     
     if (name.value === "")                                 
         {
@@ -35,19 +37,3 @@ function form()
         window.alert("Please enter your telephone number.");
         phone.focus();
         return false;
-    }
-    
-    if (username.value === "")
-    {
-        
-        window.alert('Please enter your username.');
-        username.focus();
-        return false;
-    }
-    
-    if (password.value === "")                       
-    {
-        window.alert("Please enter your password");
-        password.focus();
-        return flase;
-    }
