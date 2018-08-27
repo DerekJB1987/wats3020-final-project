@@ -4,10 +4,6 @@ console.log('It works');
 
 /*Prompt visitor to enter information*/
 
-let contact = prompt('Enter your contact information below (name, email, phone & comments');
-
-/*Prompt visitor to enter information*/
-
 function validateForm()                                   
 {
     var name = document.forms["contact"]["Name"].value;
@@ -28,3 +24,12 @@ function validateForm()
             return false
         }      
 }
+
+/*Event listener to handle  form submission*/
+
+contact.addEventListener("submit", function (event) {
+    event.preventDefault();
+    validateForm();
+  });
+  
+  
