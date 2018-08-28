@@ -4,32 +4,35 @@ console.log('It works');
 
 /*Prompt visitor to enter information*/
 
-function validateForm()                                   
-{
-    var name = document.forms["contact"]["Name"].value;
-        if (name == "") {
-            alert("Name must be filled out");
-            return false;            
-        }
-        
-    var email = document.forms["contact"]["email"].value;
-        if (email == "") {
-            alert("An email must be provided");
-            return false;
-        }
-        
-    var phone = document.forms["contact"]["phone"].value;
-        if (phone == "") {
-            alert("A Phone number must be provided");
-            return false
-        }      
-}
+    var name = document.getElementById(Name").value;
+    var at = document.getElementById("email").value.indexOf("@");
+    var phone = document.getElementById(phone").value;
+    submitOk = "true";
+    
+    if (name.length > 20) {
+        alert("The name may have no more than 20 characters");
+        submitOK = "false";
+    }
+    
+    if (at == -1) {
+        alert("Not a valid e-mail!");
+        submitOK = "false";
+    }
+    
+    if (phone.length > 10) {
+        alert("The name may have no more than 10 characters");
+        submitOK = "false";
+    }    
 
-/*Event listener to handle  form submission*/
+    if (submitOK == "false") {
+      return false;
+    }
+
+/*Event listener to handle form submission*/
+
+let contact = document.querySelector('#contact');
 
 contact.addEventListener("submit", function (event) {
     event.preventDefault();
     validateForm();
   });
-  
-  
