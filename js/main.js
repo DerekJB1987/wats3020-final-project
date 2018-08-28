@@ -30,7 +30,7 @@ console.log('It works');
 
 /*Event listener to handle form submission*/
 
-let contact = document.querySelector('#contact');
+let contact = document.querySelector('#contactform');
 
 contact.addEventListener("submit", function (event) {
     event.preventDefault();

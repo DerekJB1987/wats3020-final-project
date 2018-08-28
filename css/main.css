@@ -1,5 +1,12 @@
 @CHARSET "UTF-8";
 
+
+/* Formatting HTML inputs */
 label, input, textarea {
     display: block
+}
+
+/* CSS :invalid pseudo selector */
+input:invalid {
+  border-color: red;
 }
