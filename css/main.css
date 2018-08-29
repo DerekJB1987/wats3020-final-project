@@ -7,6 +7,6 @@ label, input, textarea {
 }
 
 /* CSS :invalid pseudo selector */
-input:invalid {
+.invalid {
   border-color: red;
 }

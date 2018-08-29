@@ -4,10 +4,11 @@ console.log('It works');
 
 /*Prompt visitor to enter information*/
 
-    var name = document.getElementById("Name").value;
+    var name = document.getElementById("name").value;
     var at = document.getElementById("email").value.indexOf("@");
+    var at = document.getElementById("email").value.indexOf(".");
     var phone = document.getElementById("phone").value;
-    submitOk = "true";
+    submit = "true";
     
     if (name.length > 20) {
         alert("The name may have no more than 20 characters");
@@ -28,11 +29,12 @@ console.log('It works');
       return false;
     }
 
+
 /*Event listener to handle form submission*/
 
 let contact = document.querySelector('#contactform');
 
 contact.addEventListener("submit", function (event) {
     event.preventDefault();
-    validatemyorm();
+    validatemyForm();
   });
