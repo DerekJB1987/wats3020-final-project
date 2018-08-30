@@ -2,12 +2,14 @@
 
 console.log('It works');
 
-/*Prompt visitor to enter information*/
+/*Validator class declaration*/
 
 class Validator {
     constructor(config){
         this.config=config;
     }
+    
+/*declaring let variables within form*/
 
     validate() {
         for()   
@@ -20,6 +22,8 @@ class Validator {
     validateEmai(){}
     validatephone(){}
 }
+
+/*declaring config variables: name, email, and phone*/
 
 let config=[
     name: {
@@ -38,7 +42,7 @@ let config=[
 ];
 
 let Validator=new validator(config);
-Validator.validate()
+    Validator.validate()
 
 /*Event listener to handle form submission*/
 
