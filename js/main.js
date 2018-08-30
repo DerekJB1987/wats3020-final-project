@@ -4,30 +4,41 @@ console.log('It works');
 
 /*Prompt visitor to enter information*/
 
-    var name = document.getElementById("name").value;
-    var at = document.getElementById("email").value.indexOf("@");
-    var at = document.getElementById("email").value.indexOf(".");
-    var phone = document.getElementById("phone").value;
-    submit = "true";
-    
-    if (name.length > 20) {
-        alert("The name may have no more than 20 characters");
-        submit = "false";
+class validator {
+    constructor(config){
+        this.config=config;
     }
-    
-    if (at === -1) {
-        alert("Not a valid e-mail!");
-        submit = "false";
-    }
-    
-    if (phone.length > 10) {
-        alert("The name may have no more than 10 characters");
-        submit = "false";
-    }    
+}
+validate(){
+    for
+}
+validateName(){}
+validateEmai(){}
+validatephone(){}
 
-    if (submit === "false") {
-      return false;
+let config=[
+    {type:name
+    required: true
+    id:"#name";
     }
+    
+    {type:email
+    required: true
+    id:"#emai;";
+    }
+    
+    {type:phone
+    required: true
+    id:"#phone";
+    }
+];
+
+let validator=newValidator(config);
+validator.validate()
+
+
+
+]
 
 
 /*Event listener to handle form submission*/
