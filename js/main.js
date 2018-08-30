@@ -9,6 +9,7 @@ class validator {
         this.config=config;
     }
 }
+
 validate(){
     for ()
     
@@ -22,23 +23,25 @@ validatephone(){}
 
 let config=[
     {type:name
-    required: true
-    id:"#name";
+        required: true;
+        id:"#name";
     }
     
     {type:email
-    required: true
-    id:"#emai;";
+        required: true;
+        id:"#emai;";
     }
     
     {type:phone
-    required: true
-    id:"#phone";
+        required: true;
+        minlength: 10;
+        id:"#phone";
     }
 ];
 
 let validator=newValidator(config);
 validator.validate()
+
 /*Event listener to handle form submission*/
 
 let contact = document.querySelector('#contactform');
