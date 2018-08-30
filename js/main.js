@@ -10,7 +10,11 @@ class validator {
     }
 }
 validate(){
-    for
+    for ()
+    
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value.indexOf("@");
+    let phone = document.getElementById("phone").value;
 }
 validateName(){}
 validateEmai(){}
@@ -35,12 +39,6 @@ let config=[
 
 let validator=newValidator(config);
 validator.validate()
-
-
-
-]
-
-
 /*Event listener to handle form submission*/
 
 let contact = document.querySelector('#contactform');
