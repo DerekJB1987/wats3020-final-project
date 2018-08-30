@@ -4,43 +4,41 @@ console.log('It works');
 
 /*Prompt visitor to enter information*/
 
-class validator {
+class Validator {
     constructor(config){
         this.config=config;
     }
-}
 
-validate(){
-    for ()
-    
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value.indexOf("@");
-    let phone = document.getElementById("phone").value;
+    validate() {
+        for()   
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value.indexOf("@");
+        let phone = document.getElementById("phone").value;
+    }
+   
+    validateName(){}
+    validateEmai(){}
+    validatephone(){}
 }
-validateName(){}
-validateEmai(){}
-validatephone(){}
 
 let config=[
-    {type:name
+    name: {
         required: true;
-        id:"#name";
-    }
+    };
     
-    {type:email
-        required: true;
-        id:"#emai;";
-    }
+    email: {
+        required: true,
+        email: true
+    };
     
-    {type:phone
+    phone: {
         required: true;
         minlength: 10;
-        id:"#phone";
-    }
+    };
 ];
 
-let validator=newValidator(config);
-validator.validate()
+let Validator=new validator(config);
+Validator.validate()
 
 /*Event listener to handle form submission*/
 
