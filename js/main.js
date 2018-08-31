@@ -15,12 +15,10 @@ contact.addEventListener("submit", function (event) {
         
         email: {
             required: true,
-            email: true
         },
         
         phone: {
             required: true,
-            minlength: 10
         }
     };
     let validator= new Validator(config);
@@ -29,12 +27,20 @@ contact.addEventListener("submit", function (event) {
     let phone = document.querySelector('#phone').value;
 //    validator.validateForm();
     validator.validateName(name);
+        if (validator.namevalid === false){
+            document.querySelector('#name')
+        }
     validator.validateEmail(email);
+        if (validator.emailvalid === false){
+            document.querySelector('#email')
+        }
     validator.validatePhone(phone);
+        if (validator.phonevalid === false){
+            document.querySelector('#phone')
+        }
 //    window.location="received.html"
     });
     
-
 
 /*Validator class declaration*/
 
@@ -49,7 +55,14 @@ class Validator {
 //    validateForm(){
 //        console.log('validate');
 //    }
-   
+
+class Error {
+    constructor(namevalid, emailvalid, phonevalid = false){
+        this.namevalid = name;
+        this.emailvalid = email;
+        this.phonevalid = phone;
+    }
+}
     validateName(testName){
         console.log(testName)
         if (this.config.name.required === true) {
