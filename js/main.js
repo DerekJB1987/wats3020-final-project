@@ -76,8 +76,8 @@ class Validator {
             if (testPhone.length ===0){
                 this.phoneValid=false;
             } else this.phoneValid=true;
-        }
-    } console.log('phoneValid',this.phoneValid)
+        } console.log('phoneValid',this.phoneValid)
+    }
 }
 
 /*declaring config variables: name, email, and phone*/
