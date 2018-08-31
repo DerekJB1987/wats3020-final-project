@@ -2,6 +2,32 @@
 
 console.log('It works');
 
+let contact = document.querySelector('#myform');
+
+contact.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let config={
+        name: {
+            required: true
+        },
+        
+        email: {
+            required: true,
+            email: true
+        },
+        
+        phone: {
+            required: true,
+            minlength: 10
+        }
+    };
+    let validator= new Validator(config);
+    validator.validateForm();
+    window.location="received.html"
+    });
+    
+
+
 /*Validator class declaration*/
 
 class Validator {
@@ -9,18 +35,9 @@ class Validator {
         this.config=config;
     }
     
-/*declaring let variables within validator loop*/
-
-// myForm.Validator() {
-//        for (let name condition of this.config){
-//        let name = true;
-//        }
-//        for (let email condition of this.config){
-//        let email = true;
-//        }
-//        for(let phone condition of this.config){
-//        let phone = true
-//        }
+    validateForm(){
+        console.log('validate');
+    }
    
     validateName(){}
     validateEmail(){}
@@ -29,30 +46,5 @@ class Validator {
 
 /*declaring config variables: name, email, and phone*/
 
-let config=[
-    name: {
-        required: true;
-    };
-    
-    email: {
-        required: true,
-        email: true
-    };
-    
-    phone: {
-        required: true;
-        minlength: 10;
-    };
-];
-
-let Validator=new Validator(config);
-    Validator.validate()
-
 /*Event listener to handle form submission*/
 
-let contact = document.querySelector('#contactform');
-
-contact.addEventListener("submit", function (event) {
-    event.preventDefault();
-    validatemyForm();
-  });
