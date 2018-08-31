@@ -12,11 +12,15 @@ class Validator {
 /*declaring let variables within form*/
 
     validate() {
-        for()   
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value.indexOf("@");
-        let phone = document.getElementById("phone").value;
-    }
+        for (let name condition of this.config){
+        let name = true;
+        }
+        for (let email condition of this.config){
+        let email = true;
+        }
+        for(let phone condition of this.config){
+        let phone = true
+        }
    
     validateName(){}
     validateEmai(){}
