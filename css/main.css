@@ -8,7 +8,7 @@ label, input, textarea {
 
 /* CSS :invalid pseudo selector */
 
-Error {
+.error {
   border-color: red;
 }
 
