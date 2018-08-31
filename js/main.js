@@ -1,12 +1,13 @@
-//fetching HTML Elements in variables by ID
+
 
 console.log('It works');
-
+/*Event listener to handle form submission*/
 let contact = document.querySelector('#myform');
+
 
 contact.addEventListener("submit", function (event) {
     event.preventDefault();
-
+/*Event listener to handle form submission*/
 
     let config={
         name: {
@@ -21,6 +22,7 @@ contact.addEventListener("submit", function (event) {
             required: true,
         }
     };
+    
     let validator= new Validator(config);
     let name = document.querySelector('#name').value;
     let email = document.querySelector('#email').value;
@@ -42,7 +44,7 @@ contact.addEventListener("submit", function (event) {
     });
     
 
-/*Validator class declaration*/
+/*Validator class declaring name, email, phone objects*/
 
 class Validator {
     constructor(config){
@@ -56,6 +58,8 @@ class Validator {
 //        console.log('validate');
 //    }
 
+/*Error class declaration */
+
 class Error {
     constructor(namevalid, emailvalid, phonevalid = false){
         this.namevalid = name;
@@ -63,6 +67,8 @@ class Error {
         this.phonevalid = phone;
     }
 }
+
+/*Form validation for name object*/
     validateName(testName){
         console.log(testName)
         if (this.config.name.required === true) {
@@ -72,7 +78,7 @@ class Error {
         }
         console.log('nameValid',this.nameValid)
     }
-
+/*Form validation for email object*/
     validateEmail(testEmail){
         console.log(testEmail)
         if (this.config.email.required === true) {
@@ -82,7 +88,7 @@ class Error {
         }
         console.log('emailValid',this.emailValid)
     }
-    
+/*Form validation for phone object*/
     validatePhone(testPhone){
         console.log(testPhone)
         if (this.config.phone.required === true) {
@@ -92,8 +98,3 @@ class Error {
         } console.log('phoneValid',this.phoneValid)
     }
 }
-
-/*declaring config variables: name, email, and phone*/
-
-/*Event listener to handle form submission*/
-
