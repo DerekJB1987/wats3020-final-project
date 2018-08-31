@@ -11,7 +11,7 @@ class Validator {
     
 /*declaring let variables within form*/
 
-    validate() {
+ myForm.Validator() {
         for (let name condition of this.config){
         let name = true;
         }
@@ -23,7 +23,7 @@ class Validator {
         }
    
     validateName(){}
-    validateEmai(){}
+    validateEmail(){}
     validatephone(){}
 }
 
@@ -45,7 +45,7 @@ let config=[
     };
 ];
 
-let Validator=new validator(config);
+let Validator=new Validator(config);
     Validator.validate()
 
 /*Event listener to handle form submission*/
