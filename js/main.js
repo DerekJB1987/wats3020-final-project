@@ -9,22 +9,22 @@ class Validator {
         this.config=config;
     }
     
-/*declaring let variables within form*/
+/*declaring let variables within validator loop*/
 
- myForm.Validator() {
-        for (let name condition of this.config){
-        let name = true;
-        }
-        for (let email condition of this.config){
-        let email = true;
-        }
-        for(let phone condition of this.config){
-        let phone = true
-        }
+// myForm.Validator() {
+//        for (let name condition of this.config){
+//        let name = true;
+//        }
+//        for (let email condition of this.config){
+//        let email = true;
+//        }
+//        for(let phone condition of this.config){
+//        let phone = true
+//        }
    
     validateName(){}
     validateEmail(){}
-    validatephone(){}
+    validatePhone(){}
 }
 
 /*declaring config variables: name, email, and phone*/
