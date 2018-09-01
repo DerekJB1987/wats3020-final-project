@@ -56,7 +56,7 @@ class Validator {
     /*Error messages  */
     function(){
       var errors = {
-        name: ['Name is required, Please enter a name',]
+        name: ['Name is required, Please enter a name'],
         email: ['A valid email address is required'],
         phone: ['A phone number is required']
       }
