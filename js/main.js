@@ -59,9 +59,10 @@ class Validator {
         name: ['Name is required, Please enter a name',]
         email: ['A valid email address is required'],
         phone: ['A phone number is required']
-      };
+      }
+    };
 
-   validateForm(){
+    validateForm(){
        console.log('validate');
    }
 
