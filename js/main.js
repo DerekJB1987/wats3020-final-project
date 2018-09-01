@@ -52,16 +52,12 @@ class Validator {
         this.namevalid=true;
         this.emailvalid=true;
         this.phonevalid=true;
-    };
-
-function errorMessages(message) {
-  this.namevalid = "errorMessages"
-}
-
+      }
     validateForm(){
        console.log('validate');
+     }
    }
-
+ }
 /*Function to remove error messages  */
 errorPlacement: function (err, element) {
   err.addClass(classes[element.attr('name')])
