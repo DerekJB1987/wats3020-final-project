@@ -52,25 +52,24 @@ class Validator {
         this.namevalid=true;
         this.emailvalid=true;
         this.phonevalid=true;
-    }
+    },
+    /*Error messages  */
+    messages: {
+      'name': {
+        true: 'Name is required!'
+      },
+      'email': {
+        true: 'A valid email address is required!'
+      },
+      'phone': {
+        true: 'A phone number is required!'
+      }
+    },
 
    validateForm(){
        console.log('validate');
    }
 
-/*Error messages  */
-
-messages: {
-  'name': {
-    true: 'Name is required!'
-  },
-  'email': {
-    true: 'A valid email address is required!'
-  },
-  'phone': {
-    true: 'A phone number is required!'
-  }
-},
 /*Function to remove error messages  */
 errorPlacement: function (err, element) {
   err.addClass(classes[element.attr('name')])
