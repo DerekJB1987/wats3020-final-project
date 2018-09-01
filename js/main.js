@@ -58,14 +58,7 @@ class Validator {
      }
    }
  }
-/*Function to remove error messages  */
-errorPlacement: function (err, element) {
-  err.addClass(classes[element.attr('name')])
-  err.insertBefore(element);
-},
-submitHandler: function(form) {
-  form.submit();
-}
+
 
 /*Form validation for name object*/
 validateName(testName){
