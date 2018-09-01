@@ -54,7 +54,7 @@ class Validator {
         this.phonevalid=true;
     };
     /*Error messages  */
-    (function(){
+    function(){
       var errors = {
         name: ['Name is required, Please enter a name',]
         email: ['A valid email address is required'],
