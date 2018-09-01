@@ -13,21 +13,21 @@ contact.addEventListener("submit", function (event) {
         name: {
             required: true
         },
-        
+
         email: {
             required: true,
         },
-        
+
         phone: {
             required: true,
         }
     };
-    
+
     let validator= new Validator(config);
     let name = document.querySelector('#name').value;
     let email = document.querySelector('#email').value;
     let phone = document.querySelector('#phone').value;
-//    validator.validateForm();
+   validator.validateForm();
     validator.validateName(name);
         if (validator.namevalid === false){
             document.querySelector('#name')
@@ -40,9 +40,9 @@ contact.addEventListener("submit", function (event) {
         if (validator.phonevalid === false){
             document.querySelector('#phone')
         }
-//    window.location="received.html"
+   window.location="received.html"
     });
-    
+
 
 /*Validator class declaring name, email, phone objects*/
 
@@ -53,19 +53,31 @@ class Validator {
         this.emailvalid=true;
         this.phonevalid=true;
     }
-    
-//    validateForm(){
-//        console.log('validate');
-//    }
 
-/*Error class declaration */
+   validateForm(){
+       console.log('validate');
+   }
 
-class Error {
-    constructor(namevalid, emailvalid, phonevalid = false){
-        this.namevalid = name;
-        this.emailvalid = email;
-        this.phonevalid = phone;
-    }
+/*Error messages  */
+
+messages: {
+  'name': {
+    true: 'Name is required!'
+  },
+  'email': {
+    true: 'A valid email address is required!'
+  },
+  'phone': {
+    true: 'A phone number is required!'
+  }
+},
+/*Function to remove error messages  */
+errorPlacement: function (err, element) {
+  err.addClass(classes[element.attr('name')])
+  err.insertBefore(element);
+},
+submitHandler: function(form) {
+  form.submit();
 }
 
 /*Form validation for name object*/
