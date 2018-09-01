@@ -52,7 +52,7 @@ class Validator {
         this.namevalid=true;
         this.emailvalid=true;
         this.phonevalid=true;
-    },
+    };
     /*Error messages  */
     (function(){
       var errors = {
