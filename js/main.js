@@ -54,7 +54,7 @@ class Validator {
         this.phonevalid=true;
     },
     /*Error messages  */
-    messages: {
+    messages {
       'name': {
         true: 'Name is required!'
       },
