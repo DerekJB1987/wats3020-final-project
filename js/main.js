@@ -1,7 +1,5 @@
-//fetching HTML Elements in variables by ID
-
 console.log('It works');
-
+/*Event listener to handle form submission*/
 let contact = document.querySelector('#myform');
 
 contact.addEventListener("submit", function (event) {
@@ -36,7 +34,7 @@ contact.addEventListener("submit", function (event) {
     
 
 
-/*Validator class declaration*/
+/*Validator class declaring name, email, phone objects*/
 
 class Validator {
     constructor(config){
@@ -49,7 +47,7 @@ class Validator {
    validateForm(){
        console.log('validate');
    }
-   
+/*Form validation for name object*/   
     validateName(testName){
         console.log(testName)
         if (this.config.name.required === true) {
@@ -59,7 +57,7 @@ class Validator {
         }
         console.log('nameValid',this.nameValid)
     }
-
+/*Form validation for email object*/
     validateEmail(testEmail){
         console.log(testEmail)
         if (this.config.email.required === true) {
@@ -69,7 +67,7 @@ class Validator {
         }
         console.log('emailValid',this.emailValid)
     }
-    
+ /*Form validation for phone object*/   
     validatePhone(testPhone){
         console.log(testPhone)
         if (this.config.phone.required === true) {
